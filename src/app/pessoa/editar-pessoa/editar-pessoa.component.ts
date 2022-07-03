@@ -22,10 +22,10 @@ export class EditarPessoaComponent implements OnInit {
   ngOnInit(): void {
     let id = +this.route.snapshot.params['id'];
     const res = this.pessoaService.buscarPorId(id);
-    if(res!==undefined){
+    if (res !== undefined){
       this.pessoa = res;
     }else{
-      throw new Error("Pessoa não encontrada: id = " + id);
+      throw new Error ("Pessoa não encontrada: id = " + id);
     }
   }
 
