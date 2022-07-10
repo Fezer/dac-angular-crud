@@ -9,6 +9,7 @@ import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
 import { NumericoDirective } from '../shared/directives/numerico.directive';
 import { MinimoValidatorDirective } from '../shared/directives/minimo-validator.directive';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { MeuPipePipe } from '../shared/pipes/meu-pipe.pipe';
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 
@@ -19,7 +20,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     InserirPessoaComponent,
     EditarPessoaComponent,
     NumericoDirective,
-    MinimoValidatorDirective
+    MinimoValidatorDirective,
+    MeuPipePipe
   ],
   imports: [
     CommonModule,
