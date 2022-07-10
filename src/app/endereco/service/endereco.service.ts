@@ -42,4 +42,5 @@ export class EnderecoService {
     enderecos = enderecos.filter(endereco => endereco.id !==id);
     localStorage[LS_CHAVE] = JSON.stringify(enderecos);
   }
+  
 }
