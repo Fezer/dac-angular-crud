@@ -10,7 +10,6 @@
         name="rua"
         [(ngModel)]="endereco.rua"
         #rua="ngModel"
-        minlength="2"
         required
       />
       <div
@@ -19,9 +18,6 @@
       >
         <div [hidden]="!rua.errors?.['required']">
           Digite a rua do endereço.
-        </div>
-        <div [hidden]="!rua.errors?.['minlength']">
-          A rua deve conter ao menos 2 caracteres.
         </div>
       </div>
     </div>

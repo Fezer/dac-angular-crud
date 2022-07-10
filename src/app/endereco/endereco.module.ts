@@ -6,6 +6,7 @@ import { InserirEnderecoComponent } from './inserir-endereco/inserir-endereco.co
 import { EditarEnderecoComponent } from './editar-endereco/editar-endereco.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NumericoDirective } from '../shared/directives';
 
 
 
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     ListarEnderecoComponent,
     InserirEnderecoComponent,
-    EditarEnderecoComponent
+    EditarEnderecoComponent,
+    NumericoDirective
   ],
   imports: [
     CommonModule,
