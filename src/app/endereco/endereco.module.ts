@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared';
 import { NgxMaskModule } from 'ngx-mask';
+import { ModalEnderecoComponent } from './modal-endereco/modal-endereco.component';
 
 
 
@@ -16,6 +17,7 @@ import { NgxMaskModule } from 'ngx-mask';
     ListarEnderecoComponent,
     InserirEnderecoComponent,
     EditarEnderecoComponent,
+    ModalEnderecoComponent,
   ],
   imports: [
     CommonModule,

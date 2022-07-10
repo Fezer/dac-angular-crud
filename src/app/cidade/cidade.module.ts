@@ -7,6 +7,7 @@ import { EditarCidadeComponent } from './editar-cidade/editar-cidade.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared';
+import { ModalCidadeComponent } from './modal-cidade/modal-cidade.component';
 
 
 
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared';
   declarations: [
     ListarCidadeComponent,
     InserirCidadeComponent,
-    EditarCidadeComponent
+    EditarCidadeComponent,
+    ModalCidadeComponent
   ],
   imports: [
     CommonModule,
