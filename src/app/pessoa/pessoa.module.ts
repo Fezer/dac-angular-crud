@@ -8,6 +8,8 @@ import { InserirPessoaComponent } from './inserir-pessoa/inserir-pessoa.componen
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
 import { NumericoDirective } from '../shared/directives/numerico.directive';
 import { MinimoValidatorDirective } from '../shared/directives/minimo-validator.directive';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 
 
@@ -22,7 +24,8 @@ import { MinimoValidatorDirective } from '../shared/directives/minimo-validator.
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
     PessoaService
