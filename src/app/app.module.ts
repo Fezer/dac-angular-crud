@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EnderecoModule } from './endereco/endereco.module';
 import { PessoaModule } from './pessoa/pessoa.module';
+import { MinimoValidatorDirective } from './shared/directives/minimo-validator.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

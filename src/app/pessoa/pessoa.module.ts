@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { InserirPessoaComponent } from './inserir-pessoa/inserir-pessoa.component';
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
+import { NumericoDirective } from '../shared/directives/numerico.directive';
+import { MinimoValidatorDirective } from '../shared/directives/minimo-validator.directive';
 
 
 
@@ -13,7 +15,9 @@ import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
   declarations: [
     ListarPessoaComponent,
     InserirPessoaComponent,
-    EditarPessoaComponent
+    EditarPessoaComponent,
+    NumericoDirective,
+    MinimoValidatorDirective
   ],
   imports: [
     CommonModule,
