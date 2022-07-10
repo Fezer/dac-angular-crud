@@ -6,6 +6,7 @@ import { InserirCidadeComponent } from './inserir-cidade/inserir-cidade.componen
 import { EditarCidadeComponent } from './editar-cidade/editar-cidade.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared';
 
 
 
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [
     CidadeService

@@ -6,6 +6,7 @@ import { InserirEstadoComponent } from './inserir-estado/inserir-estado.componen
 import { ListarEstadoComponent } from './listar-estado/listar-estado.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared';
 
 
 
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   providers: [
     EstadoService
