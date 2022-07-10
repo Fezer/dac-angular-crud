@@ -24,8 +24,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     CommonModule,
     RouterModule,
     FormsModule,
-    NgxMaskModule.forRoot(),
-    SharedModule
+    SharedModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
     PessoaService

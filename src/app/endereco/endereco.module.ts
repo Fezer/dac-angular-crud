@@ -6,7 +6,8 @@ import { InserirEnderecoComponent } from './inserir-endereco/inserir-endereco.co
 import { EditarEnderecoComponent } from './editar-endereco/editar-endereco.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { NumericoDirective } from '../shared/directives';
+import { SharedModule } from '../shared';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -15,12 +16,13 @@ import { NumericoDirective } from '../shared/directives';
     ListarEnderecoComponent,
     InserirEnderecoComponent,
     EditarEnderecoComponent,
-    NumericoDirective
   ],
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
     EnderecoService

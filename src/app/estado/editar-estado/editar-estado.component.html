@@ -31,6 +31,7 @@
         [(ngModel)]="estado.sigla"
         #sigla="ngModel"
         required
+        minlength="2"
       />
       <div
         *ngIf="sigla.errors && (sigla.dirty || sigla.touched)"
@@ -38,6 +39,9 @@
       >
         <div [hidden]="!sigla.errors?.['required']">
           Digite a sigla do estado.
+        </div>
+        <div [hidden]="!sigla.errors?.['minlength']">
+            A sigla deve conter 2 caracteres.
         </div>
       </div>
     </div>
