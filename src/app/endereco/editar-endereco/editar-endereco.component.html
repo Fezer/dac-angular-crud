@@ -2,6 +2,39 @@
 <div class="well">
   <form #formEndereco="ngForm">
     <div class="form-group">
+      <label for="tipo">Tipo logradouro:</label><br />
+      <input
+        type="radio"
+        class="form-check-input"
+        id="tipo1"
+        name="tipo"
+        [(ngModel)]="endereco.tipo"
+        #tipo1="ngModel"
+        value="Avenida"
+      />
+      Avenida <br />
+      <input
+        type="radio"
+        class="form-check-input"
+        id="tipo2"
+        name="tipo"
+        [(ngModel)]="endereco.tipo"
+        #tipo2="ngModel"
+        value="Rua"
+      />
+      Rua <br />
+      <input
+        type="radio"
+        class="form-check-input"
+        id="tipo3"
+        name="tipo"
+        [(ngModel)]="endereco.tipo"
+        #tipo3="ngModel"
+        value="Travessa"
+      />
+      Travessa <br />
+    </div>
+    <div class="form-group">
       <label for="rua">Rua:</label>
       <input
         type="text"
@@ -96,43 +129,14 @@
     </div>
     <div class="form-group">
       <label for="cidade">Cidade:</label>
-      <input
-        type="text"
-        class="form-control"
-        id="cidade"
+      <ng-select
         name="cidade"
+        [items]="cidades"
+        bindLabel="nome"
         [(ngModel)]="endereco.cidade"
-        #cidade="ngModel"
-        required
-      />
-      <div
-        *ngIf="cidade.errors && (cidade.dirty || cidade.touched)"
-        class="alert alert-danger"
+        placeholder="Selecione uma cidade"
       >
-        <div [hidden]="!cidade.errors?.['required']">
-          Digite a cidade do endereço.
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="estado">Estado:</label>
-      <input
-        type="text"
-        class="form-control"
-        id="estado"
-        name="estado"
-        [(ngModel)]="endereco.estado"
-        #estado="ngModel"
-        required
-      />
-      <div
-        *ngIf="estado.errors && (estado.dirty || estado.touched)"
-        class="alert alert-danger"
-      >
-        <div [hidden]="!estado.errors?.['required']">
-          Digite a estado do endereço.
-        </div>
-      </div>
+      </ng-select>
     </div>
     <div class="form-group">
       <label for="residencial">Residencial:</label>

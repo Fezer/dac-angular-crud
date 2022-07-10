@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared';
 import { NgxMaskModule } from 'ngx-mask';
 import { ModalEnderecoComponent } from './modal-endereco/modal-endereco.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -24,6 +25,7 @@ import { ModalEnderecoComponent } from './modal-endereco/modal-endereco.componen
     RouterModule,
     FormsModule,
     SharedModule,
+    NgSelectModule,
     NgxMaskModule.forRoot()
   ],
   providers: [

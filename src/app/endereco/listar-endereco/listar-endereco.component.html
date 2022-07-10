@@ -2,6 +2,7 @@
 <table class="table table-striped table-bordered table-hover">
   <tbody>
     <tr>
+      <th>Tipo Logradouro</th>
       <th>Rua</th>
       <th>Número</th>
       <th>Complemento</th>
@@ -17,13 +18,14 @@
       </th>
     </tr>
     <tr *ngFor="let endereco of enderecos">
+      <td> {{endereco.tipo}} </td>
       <td> {{endereco.rua}} </td>
       <td> {{endereco.numero}} </td>
       <td> {{endereco.complemento}} </td>
       <td> {{endereco.bairro}} </td>
       <td> {{endereco.cep! | mask: '00000-000'}} </td>
-      <td> {{endereco.cidade}} </td>
-      <td> {{endereco.estado}} </td>
+      <td> {{endereco?.cidade?.nome}} </td>
+      <td> {{endereco?.cidade?.estado?.sigla}} </td>
       <td> {{endereco.residencial! ? "Residencial" : "Comercial" }} </td>
       <td class="text-center" style="width: 300px">
         <button type="button" class="btn btn-xs btn-info"

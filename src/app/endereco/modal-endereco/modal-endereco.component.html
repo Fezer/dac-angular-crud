@@ -11,13 +11,14 @@
   </div>
   <div class="modal-body text-center">
     <div>
+      <p>Tipo Logradouro: {{ endereco.tipo }}</p>
       <p>Rua: {{ endereco.rua }}</p>
       <p>Número: {{ endereco.numero }}</p>
       <p>Complemento: {{ endereco.complemento }}</p>
       <p>Bairro: {{ endereco.bairro }}</p>
       <p>CEP: {{ endereco.cep }}</p>
-      <p>Cidade: {{ endereco.cidade }}</p>
-      <p>Estado: {{ endereco.estado }}</p>
+      <p>Cidade: {{ endereco?.cidade?.nome }}</p>
+      <p>Estado: {{ endereco?.cidade?.estado?.sigla }}</p>
       <p> {{endereco.residencial! ? "Residencial" : "Comercial" }} </p>
     </div>
   </div>
