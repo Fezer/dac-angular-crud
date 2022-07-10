@@ -18,14 +18,7 @@ export class ListarEnderecoComponent implements OnInit {
   }
 
   listarTodos(): Endereco[]{
-    //return this.enderecoService.listarTodos();
-
-    return [
-      new Endereco(1, "Rua 1", 20),
-      new Endereco(2, "Rua 2", 52),
-      new Endereco(3, "Rua 3", 33),
-      new Endereco(4, "Rua 4", 88),
-    ];
+    return this.enderecoService.listarTodos();
   }
 
   remover($event: any, endereco: Endereco): void{
