@@ -9,6 +9,9 @@ import { EstadoModule } from './estado/estado.module';
 import { PessoaModule } from './pessoa/pessoa.module';
 import { SharedModule } from './shared';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgSelectModule } from '@ng-select/ng-select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,9 @@ import { SharedModule } from './shared';
     EnderecoModule,
     CidadeModule,
     EstadoModule,
-    SharedModule
+    SharedModule,
+    NgbModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

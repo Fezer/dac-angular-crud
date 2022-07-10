@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared';
 import { ModalCidadeComponent } from './modal-cidade/modal-cidade.component';
+import { NgxMaskModule } from 'ngx-mask';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -22,7 +24,9 @@ import { ModalCidadeComponent } from './modal-cidade/modal-cidade.component';
     CommonModule,
     RouterModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    NgSelectModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [
     CidadeService
