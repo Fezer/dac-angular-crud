@@ -25,7 +25,7 @@ export class InserirCidadeComponent implements OnInit {
   inserir(): void{
     if(this.formCidade.form.valid){
       this.cidadeService.inserir(this.cidade);
-      this.router.navigate(["/cidadades"]);
+      this.router.navigate(["/cidades"]);
     }
   }
 
